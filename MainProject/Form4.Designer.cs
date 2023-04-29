@@ -35,9 +35,9 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(12, 45);
+            this.button4.Location = new System.Drawing.Point(12, 79);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(259, 77);
+            this.button4.Size = new System.Drawing.Size(343, 77);
             this.button4.TabIndex = 12;
             this.button4.Text = "show items";
             this.button4.UseVisualStyleBackColor = true;
@@ -46,7 +46,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(62, 186);
+            this.button3.Location = new System.Drawing.Point(107, 256);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(147, 52);
             this.button3.TabIndex = 13;
@@ -58,7 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(283, 300);
+            this.ClientSize = new System.Drawing.Size(367, 337);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Name = "Form4";

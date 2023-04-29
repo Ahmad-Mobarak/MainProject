@@ -105,16 +105,25 @@ namespace MainProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            int id = Int32.Parse(textBox1.Text.ToString());
-            SqlCommand sq = new SqlCommand("delete from items where itemid = " + textBox1.Text + " ", conn);
-            sq.ExecuteNonQuery();
-            conn.Close();
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
-            textBox5.Clear();
+            DialogResult res = MessageBox.Show("do want to delet this item", "Delet !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                conn.Open();
+                int id = Int32.Parse(textBox1.Text.ToString());
+                SqlCommand sq = new SqlCommand("delete from items where itemid = " + textBox1.Text + " ", conn);
+                sq.ExecuteNonQuery();
+                conn.Close();
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+            }
+            else
+            {
+                this.Show();
+            }
+            
         }
     }
 }
