@@ -55,7 +55,7 @@ namespace MainProject
         {
 
             conn.Open();
-            SqlDataAdapter da = new SqlDataAdapter("select * from items", conn);
+            SqlDataAdapter da = new SqlDataAdapter("select itemid, itemname, catigory, price from items", conn);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
